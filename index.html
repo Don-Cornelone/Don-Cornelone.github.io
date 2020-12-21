@@ -1,0 +1,130 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!--NAVIGATION BAR-->
+
+    <div class="nav">
+      
+      <div class="menu">
+        <a href="index.html">Дома</a>
+        <a href="about.html">За нас</a>
+        <a href="info.html">Информации</a>
+        <a href="contact.html">Контакт</a>
+        
+        <img src="logob.png" alt="logo">
+      </div>
+    </div>
+
+    <!--NAVIGATION BAR END-->
+
+    <!--SLIDESHOW-->
+
+    <div class="slideshow">
+    <div class="slider">
+        <div class="slides">
+          <!--RADIO BUTTONS-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--RADIO BUTTONS END-->
+          <!--SLIDESHOW IMAGES-->
+          <div class="slide first">
+            <img src="PIC1.jpeg" alt="">
+          </div>
+          <div class="slide">
+            <img src="PIC2.jpeg" alt="">
+          </div>
+          <div class="slide">
+            <img src="PIC3.jpeg" alt="">
+          </div>
+          <div class="slide">
+            <img src="PIC4.jpeg" alt="">
+          </div>
+          <!--SLIDESHOW IMAGES END-->
+    
+        </div>
+
+        <!--SLIDESHOW NAVIGATION-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--SLIDESHOW NAVIGATION END-->
+      </div>
+  
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+    </div>
+
+    <!--SLIDESHOW END-->
+
+    <!--TEXT AREA-->
+    
+    <div class="main-text">
+         <p>Првите почетоци на училиштето се во училишната зграда во ОУ. Гоце Делчев- Ресен на улица Мите Трпевски бр. 42 во централното градско подрачје, додека името под кое работеше гимназијата е Стив Наумов. Од учебната 1978/79 година Училишниот центар за стручно образование на земјоделски кадри се интегрира со Гимназијата во Ресен, во Центар за средно образование Јосип Броз Тито со гимназиски и лозаро-овоштарски паралелки.</p>
+         <div class="btn-body">
+          <a href="about.html" class="btn">Learn more</a>
+        </div>
+    </div>
+
+    <hr class="hr">
+
+    <div class="container">
+      <img src="logo.png" style="width: 100%; opacity: 0.5;">
+      <div class="center-text">
+        <p>Квалитетното образование е основен двигател на економскиот и општествениот развој во целина. Успешен образовен систем постојано ја зголемува заинтересираноста за природните науки. <br><br> Во текот на 50 годишно постоење, земјоделската струка даваше полн придонес во подобрување на општествената заедница, остварувајки ја својата мисија фокусирна кон зјакнување на образованието со квалитетен наставен кадар и научни истражувања во областа на природните науки.
+          Оваа мисија училиштето се грижи и понатаму да ја одржува и развива.
+        </p>
+      </div>
+    </div>
+
+    <hr class="hr">
+
+    <h2 style="text-align: center;">Новости</h2>
+  
+    <div class="wrapper">
+      <video controls poster="Instinctposter.png">
+        <source src="Instinct.mp4">
+      </video>
+      <p class="para1">Младите музичари од групата „Инстинкт“ свират рок, а работат и своја авторска музика. Настапувале на повеќе настани низ повеќе градови во државата. Пред скоро време ја објавија својата авторска песна „Свет“</p>
+    </div>
+
+    <!--FOOTER-->
+
+    <section class="footer">
+      <div class="footer-content">
+        <p>&copy; 2020 Designed by Vlado Popovski</p>
+      </div>
+    
+
+    <div class="social-menu">
+      <ul style="top: 2650;">
+        <li><a href="https://www.facebook.com/csamoil" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.facebook.com/csamoil" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/csamoil" target="_blank"><i class="fa fa-youtube"></i></a></li>
+      </ul>
+    </div>
+
+  </section>
+
+  </body>
+</html>
